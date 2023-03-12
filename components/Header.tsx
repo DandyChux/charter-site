@@ -6,11 +6,10 @@ import OnPointLogo from '@public/On_Point_Charters_Logo.png'
 import styles from '@styles/header/header.module.scss'
 
 const Header: React.FC = () => {
-    var activeLink;
+    const [activeLink, setActiveLink] = useState('');
 
     const handleSelect = (eventKey: any) => {
-        console.log(eventKey);
-        activeLink = eventKey;
+        setActiveLink(eventKey)
     }
 
     return (

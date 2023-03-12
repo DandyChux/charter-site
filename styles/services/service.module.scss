@@ -1,0 +1,30 @@
+.serviceHeader {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.serviceList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 5rem 0;
+}
+
+.cardContainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card {
+    height: 100%;
+    text-align: center;
+    &:hover {
+        border-color: red !important;
+    }
+}
+
+.cardHeader {
+    font-weight: 450;
+}

@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { Form, FloatingLabel, Button, FormGroup } from 'react-bootstrap'
-import styles from '@styles/contact.module.scss'
+import styles from '@styles/contact/contact.module.scss'
 
 const ContactForm: React.FC = () => {
 
