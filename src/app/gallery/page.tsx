@@ -8,7 +8,7 @@ type ImageData = {
 }
 
 export default async function Gallery() {
-    const imageData = await getImages() as ImageData
+    // const imageData = await getImages() as ImageData
 
     return (
         <div className='flex flex-col'>
@@ -16,7 +16,7 @@ export default async function Gallery() {
                 Gallery
             </h1>
 
-            <Carousel images={imageData.images} />
+            {/* <Carousel images={imageData.images} /> */}
         </div>
     )
 }
