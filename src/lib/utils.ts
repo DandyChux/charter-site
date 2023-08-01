@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export async function getImages() {
-  const res = await fetch(`${env.NEXT_PUBLIC_URL}/api/images`)
+  const res = await fetch(`/api/images`)
 
   if (!res.ok) {
       throw new Error('Failed to fetch images')
