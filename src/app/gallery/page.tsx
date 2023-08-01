@@ -1,16 +1,7 @@
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import { Carousel } from '~/components/carousel'
-
-async function getImages() {
-    const res = await fetch(`${window.location.origin}/api/images`)
-  
-    if (!res.ok) {
-        throw new Error('Failed to fetch images')
-    }
-  
-    return res.json()
-}
+import { getImages } from '~/lib/utils'
 
 type ImageData = {
     images: string[]
