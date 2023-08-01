@@ -27,9 +27,9 @@ export const ContactForm: React.FC = () => {
     }
 
     return (
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center my-2'>
             <h1>Get In Touch</h1>
-            <form className='max-w-2xl mx-auto w-72 md:w-[30rem] mt-12'>
+            <form className='max-w-2xl mx-auto w-72 md:w-[30rem] mt-4 md:mt-12'>
                 <div className='flex flex-col my-3 mx-2 space-y-2'>
                     <Label htmlFor='name'>Name</Label>
                     <Input

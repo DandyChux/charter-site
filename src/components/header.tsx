@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
     }
 
     return (
-        <header className='sticky top-0 z-10 p-4 w-full border-b bg-background text-foreground'>
+        <header className='sticky top-0 z-10 w-full border-b bg-background text-foreground p-4'>
             <div className='flex items-center justify-center gap-4'>
                 {/* Mobile menu button */}
                 <Button variant={'ghost'} className='md:hidden mr-auto' onClick={toggleMobileMenu}>
@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
                 </Button>
 
                 {/* Logo */}
-                <Link href='/' className='mr-auto md:m-0' passHref>
+                <Link href='/' className='m-0' passHref>
                     <Image src={OnPointLogo} alt='On Point Charters Logo' className='h-16 w-16 md:w-20 md:h-20 md:scale-110' />
                 </Link>
 

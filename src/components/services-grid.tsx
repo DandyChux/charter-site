@@ -44,7 +44,7 @@ const serviceList: ServiceProps[] = [
             rates: [
                 {
                     time: '6 hours',
-                    price: '$550'
+                    price: '$450'
                 }
             ]
         },
