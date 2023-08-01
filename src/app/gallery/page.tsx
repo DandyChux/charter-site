@@ -16,7 +16,7 @@ export default async function Gallery() {
                 Gallery
             </h1>
 
-            <Carousel images={imageData.images} />
+            {/* <Carousel images={imageData.images} /> */}
         </div>
     )
 }
