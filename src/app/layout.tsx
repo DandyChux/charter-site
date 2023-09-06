@@ -4,6 +4,8 @@ import Logo from '~public/On_Point_Charters_Logo.png'
 import Spinner from '~/components/ui/spinner';
 import { ContactForm } from '~/components/contact-form';
 import { Header } from '~/components/header';
+import { Analytics } from '@vercel/analytics/react'
+import Providers from '~/components/providers';
 
 import '~/styles/globals.css'
 
@@ -26,13 +28,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang='en'>
             <body>
-                <Suspense fallback={<div className='relative flex flex-col h-full w-full items-center justify-center'><Spinner /></div>}>
-                    <Header />
-                    <main className="flex flex-col flex-1 py-12 px-8">
-                        {children}
-                        <ContactForm />
-                    </main>
-                </Suspense>
+                <Providers>
+                    <Suspense fallback={<div className='relative flex flex-col h-full w-full items-center justify-center'><Spinner /></div>}>
+                        <Header />
+                        <main className="flex flex-col flex-1 py-12 px-8">
+                            {children}
+                            <ContactForm />
+                        </main>
+                    </Suspense>
+                    <Analytics />
+                </Providers>
             </body>
         </html>
     );

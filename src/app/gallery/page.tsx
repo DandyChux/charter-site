@@ -2,13 +2,14 @@ import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import { Carousel } from '~/components/carousel'
 import { getImages } from '~/lib/utils'
+import { serverClient } from '../_trpc/server'
 
 type ImageData = {
     images: string[]
 }
 
 export default async function Gallery() {
-    const imageData = await getImages() as ImageData
+    const imageData = await serverClient.getImages()
 
     return (
         <div className='flex flex-col'>
